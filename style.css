@@ -4,7 +4,7 @@ html {
   background-color: rgba(122, 191, 191, .5);
 }
 
-h1, h2, h3, nav a, nav span, footer {
+h1, h2, h3, footer {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
   }
@@ -19,3 +19,76 @@ dt {
     font-weight: 700;
   }
   
+body {
+  background-color: #F2F2F2;
+  max-width: 1280px;
+}
+
+/* Tacos */
+
+h1{
+text-align: center;
+}
+
+.tacos {
+  display: grid;
+  grid-template-columns: auto 304px 3fr;
+}
+
+.tacos img {
+  width: 100%;
+  align-self: center;
+}
+
+menu {
+  padding: 55px 5px;
+  border: 3px solid #EB5428;
+  background-color: #ffffff;
+}
+
+menu li {
+  list-style: none;
+  text-align: center;
+  color: #EB5428;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 3px;
+}
+
+.tacos p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/* Recipe Details */
+
+.recipe_details {
+background-color: #000000;
+color: #7ABFBF;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+justify-items: center;
+}
+
+.recipe_details h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  }
+
+.recipe_details dl {
+  display: flex;
+  flex-flow: column wrap;
+ }
+
+ .recipe_details dt {
+  text-align: center;
+ }
+
+ .recipe_details dd {
+  margin: 0px;
+  text-align: center;
+ }
