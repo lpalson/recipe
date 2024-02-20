@@ -75,22 +75,78 @@ justify-items: center;
 }
 
 .recipe_details h2 {
-  grid-column: 1 / -1;
-  text-align: center;
-  }
+ grid-column: 1 / -1;
+ text-align: center;
+}
 
 .recipe_details dl {
-  display: flex;
-  flex-flow: column wrap;
- }
+ display: flex;
+ flex-flow: column wrap;
+}
 
- .recipe_details dt {
+.recipe_details dt {
+ text-align: center;
+}
+
+.recipe_details dd {
+ margin: 0px;
+ text-align: center;
+}
+
+/* Ingredients & Directions */
+
+.recipe_more {
+ display: grid;
+ grid-template-columns: auto auto;
+}
+
+div.ingredients {
+ padding: 0px 10px;
+}
+
+div.ingredients h2{
+ text-align: center;
+}
+
+div.ingredients li{
+ padding: 5px;
+}
+
+div.directions h2{
+ text-align: center;
+}
+
+div.directions li{
+ padding: 10px;
+}
+
+/* Side Dishes */
+
+.sides {
+  background-color: #7ABFBF;
+}
+
+.sides h2 {
   text-align: center;
  }
-
- .recipe_details dd {
-  margin: 0px;
-  text-align: center;
- }
-
  
+.sides dl {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+}
+ 
+.sides dt {
+ order: 1;
+ position: relative;
+ margin: 0 auto;
+ text-align: center;
+}
+  
+.sides img {
+  order: 0;
+  flex: 25%;
+  padding: 5px;
+  margin: 0 auto;
+  position: relative;
+}
