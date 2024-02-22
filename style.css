@@ -27,10 +27,12 @@ body {
 /* Tacos */
 
 h1{
+margin-top: 150px;
 text-align: center;
 }
 
 .tacos {
+  background-color: #F2F2F2;
   display: grid;
   grid-template-columns: auto 304px 3fr;
 }
@@ -57,6 +59,7 @@ menu li {
 }
 
 .tacos p {
+  background-color: #F2F2F2;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -124,6 +127,7 @@ div.directions li{
 
 .sides {
   background-color: #7ABFBF;
+  padding: 15px 0px;
 }
 
 .sides h2 {
@@ -131,22 +135,88 @@ div.directions li{
  }
  
 .sides dl {
-  order: 2;
   display: flex;
   flex-direction: row;
 }
  
 .sides dt {
- order: 1;
  position: relative;
- margin: 0 auto;
- text-align: center;
+ top: 235px;
+ left: 40px;
 }
   
+ 
+.sides dd {
+  position: relative;
+  top: 10px;
+ }
+
 .sides img {
-  order: 0;
   flex: 25%;
-  padding: 5px;
+  top: -45px;
   margin: 0 auto;
   position: relative;
+}
+
+
+/* Navigation */
+
+div.borger {
+  display:none;
+}
+
+div.logo {
+  padding: 15px;
+  background-color: #EB5428;
+}
+
+nav {
+ max-width: 1280px;
+ position: absolute;
+ top: 0px;
+ background-color: #ffffff;
+ box-shadow: 0px 2px 4px #000000;
+ display: grid;
+ grid-template-columns: 1fr auto 1fr;
+}
+
+div.main_nav_buttons {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: auto auto;
+  justify-content: end;
+  justify-items: center;
+  align-content: center;
+}
+
+nav li {
+  list-style: none;
+  /* text-align: center; */
+  color: #EB5428;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  order: 2;
+}
+
+nav a {
+ order: 0;
+}
+
+nav img {
+display: block;
+width: 33%;
+margin: 0 auto;
+  }
+
+div.avatar {
+  padding: 15px;
+}  
+
+div.avatar a {
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
 }
