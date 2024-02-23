@@ -200,6 +200,7 @@ div.logo {
 
 nav {
  max-width: 1280px;
+ width: 98%;
  position: absolute;
  top: 0px;
  background-color: #ffffff;
@@ -219,7 +220,6 @@ div.main_nav_buttons {
 
 nav li {
   list-style: none;
-  /* text-align: center; */
   color: #EB5428;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -300,4 +300,188 @@ footer img {
   content: "";
   clear: both;
   display: table;
+}
+
+
+
+/* Tablet View */
+
+@media screen and (max-width: 768px) {
+  h1{
+    text-align: left;
+    } 
+
+nav {
+  z-index: 3;
+  position: absolute;
+  padding-top: 85px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+div.searchbar {
+  z-index: 5;
+  position: absolute;
+  top: -110px;
+  right: 10px;
+}
+
+/* Tacos */
+
+.tacos {
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.tacos img {
+  position: relative;
+  width: 100%;
+  top: 16px;
+}
+
+menu {
+  position: absolute;
+  z-index: 2;
+  width: 98%;
+  height: 25px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+menu div {
+  float: left;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+menu li {
+  list-style: none;
+  text-align: center;
+  color: #EB5428;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 3px;
+}
+
+.tacos p {
+  background-color: #F2F2F2;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/* Details */
+
+.recipe_details {
+  display: inline-block;
+  background-color: #F2F2F2;
+  color: #000000;
+  margin: 0 auto;
+  margin-left: 33%;
+  margin-right: 33%;
+  padding-bottom: 20px;
+}
+  
+  .recipe_details h2 {
+   text-align: center;
+  }
+  
+  .recipe_details dl {
+    display: block;
+
+  }
+  
+  .recipe_details dt {
+    float: left;
+   text-align: center;
+  }
+  
+  .recipe_details dd {
+   float: right;
+   text-align: right;
+  }
+  
+
+
+/* Side Dishes */
+
+.sides {
+  background-color: #7ABFBF;
+  padding: 15px 0px;
+}
+
+.sides h2 {
+  text-align: center;
+ }
+ 
+.sides dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+ 
+.sides dt {
+ position: relative;
+ top: 95px;
+}
+  
+.sides dd {
+  position: relative;
+  top: 10px;
+  padding-bottom: 20px;
+ }
+
+.sides img {
+  max-width: 25%;
+  top: -25px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  }
+  
+  footer small {
+    margin-top: 20%;
+    padding-left: 10px;
+    order: 5;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    }
+  
+  footer img {
+    order: 3;
+    padding: 10px;
+    width: 100%;
+    float: left;
+    max-width: fit-content;
+  }
+  
+  .taco_img::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+
+/* Tablet View */
+
+@media screen and (max-width: 414px) {
+ 
+ 
+  div.borger {
+    display: block;
+  }
 }
