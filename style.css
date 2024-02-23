@@ -24,10 +24,36 @@ body {
   max-width: 1280px;
 }
 
+
+/* Searchbar */
+
+div.searchbar {
+  margin-top: 100px;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+}
+
+div.searchbar input {
+  padding: 20px 30px;
+  border: 3px solid #EB5428;
+}
+
+
+div.searchbar button {
+  vertical-align: middle;
+  line-height: 2;
+  padding: 6px 8px;
+  border: 3px solid #F2F2F2;
+  background-color: #EB5428;
+}
+
+
 /* Tacos */
 
 h1{
-margin-top: 150px;
+margin-top: 50px;
 text-align: center;
 }
 
@@ -66,6 +92,7 @@ menu li {
   line-height: 150%;
 }
 
+
 /* Recipe Details */
 
 .recipe_details {
@@ -96,6 +123,7 @@ justify-items: center;
  text-align: center;
 }
 
+
 /* Ingredients & Directions */
 
 .recipe_more {
@@ -123,6 +151,7 @@ div.directions li{
  padding: 10px;
 }
 
+
 /* Side Dishes */
 
 .sides {
@@ -145,7 +174,6 @@ div.directions li{
  left: 40px;
 }
   
- 
 .sides dd {
   position: relative;
   top: 10px;
@@ -219,4 +247,57 @@ div.avatar a {
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
+}
+
+/* Footer & Socials */
+
+aside {
+  float: right;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+aside a {
+  text-align: center;
+  text-decoration: none;
+  color: #EB5428;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+aside svg {
+  padding: 5px 25px;
+ justify-items: center;
+}
+
+footer {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer small {
+  margin-top: 20%;
+  padding-left: 10px;
+  order: 5;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  }
+
+footer img {
+  order: 3;
+  padding: 10px;
+  width: 100%;
+  float: left;
+  max-width: fit-content;
+}
+
+.taco_img::after {
+  content: "";
+  clear: both;
+  display: table;
 }
