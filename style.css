@@ -201,7 +201,7 @@ div.logo {
 
 nav {
  max-width: 1280px;
- width: 98%;
+ width: 100%;
  position: absolute;
  top: 0px;
  background-color: #ffffff;
@@ -344,7 +344,7 @@ div.searchbar {
 menu {
   position: absolute;
   z-index: 2;
-  width: 98%;
+  width: 100%;
   height: 25px;
   border: none;
   background-color: rgba(255, 255, 255, 0.8);
@@ -477,12 +477,55 @@ footer {
 
 }
 
-/* Tablet View */
+
+
+/* Mobile View */
 
 @media screen and (max-width: 414px) {
  
- 
+  h1{
+    text-align: center;
+    } 
+
+
+div.searchbar {
+  z-index: 4;
+  position: relative;
+}
+
+
+  nav {
+    top: 0px;
+    z-index: 3;
+    position: absolute;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+  }
+
   div.borger {
     display: block;
+    padding: 15px;
+  }  
+  
+  div.borger a {
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
   }
+
+div.main_nav_buttons  {
+    display: none;
+  }
+
+  div.logo {
+   align-items: center;
+  }
+  div.logo svg {
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+
 }
